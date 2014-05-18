@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\UnrealTutorial2.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{F816545E-33D1-4542-B33D-0F85E22F5AFE}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\UnrealTutorial2.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\UnrealTutorial2Editor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{1F0EE2AE-A209-486B-AD65-A39F35FD2D7A}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\UnrealTutorial2">
+			<UniqueIdentifier>{F2A969BC-EC4B-4B93-AE1E-978FB0CAD68F}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\UnrealTutorial2\UnrealTutorial2.Build.cs">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2.cpp">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2.h">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Character.cpp">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Character.h">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2GameMode.cpp">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2GameMode.h">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2HUD.cpp">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2HUD.h">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Projectile.cpp">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Projectile.h">
+			<Filter>Source\UnrealTutorial2</Filter>
+		</ClInclude >
+		<Filter Include="Source\UnrealTutorial2\Resources">
+			<UniqueIdentifier>{7A3391A0-29A5-4E9F-9D25-E38E5ECE3921}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\UnrealTutorial2\Resources\Windows">
+			<UniqueIdentifier>{92BA31AB-1CD0-41FC-9188-B07DAE68EA84}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\UnrealTutorial2\Resources\Windows\UnrealTutorial2.ico">
+			<Filter>Source\UnrealTutorial2\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\UnrealTutorial2\Resources\Windows\UnrealTutorial2.rc">
+			<Filter>Source\UnrealTutorial2\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>

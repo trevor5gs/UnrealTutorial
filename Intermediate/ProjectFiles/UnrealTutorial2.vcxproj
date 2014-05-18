@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="DebugGame_RocketGame|x64">
+			<Configuration>DebugGame_RocketGame</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_RocketGame|Win32">
+			<Configuration>DebugGame_RocketGame</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_Editor|x64">
+			<Configuration>DebugGame_Editor</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_Editor|Win32">
+			<Configuration>DebugGame_Editor</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_RocketGame|x64">
+			<Configuration>Development_RocketGame</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_RocketGame|Win32">
+			<Configuration>Development_RocketGame</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_Editor|x64">
+			<Configuration>Development_Editor</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_Editor|Win32">
+			<Configuration>Development_Editor</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Shipping_RocketGame|x64">
+			<Configuration>Shipping_RocketGame</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Shipping_RocketGame|Win32">
+			<Configuration>Shipping_RocketGame</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\UnrealTutorial2.uproject" />
+		<None Include="..\..\Source\UnrealTutorial2.Target.cs" />
+		<None Include="..\..\Source\UnrealTutorial2Editor.Target.cs" />
+		<None Include="..\..\Config\DefaultEditor.ini" />
+		<None Include="..\..\Config\DefaultEngine.ini" />
+		<None Include="..\..\Config\DefaultGame.ini" />
+		<None Include="..\..\Config\DefaultInput.ini" />
+		<None Include="..\..\Source\UnrealTutorial2\UnrealTutorial2.Build.cs" />
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2.cpp" />
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2.h" />
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Character.cpp" />
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Character.h" />
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2GameMode.cpp" />
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2GameMode.h" />
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2HUD.cpp" />
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2HUD.h" />
+		<ClCompile Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Projectile.cpp" />
+		<ClInclude Include="..\..\Source\UnrealTutorial2\UnrealTutorial2Projectile.h" />
+		<None Include="..\..\Source\UnrealTutorial2\Resources\Windows\UnrealTutorial2.ico" />
+		<ResourceCompile Include="..\..\Source\UnrealTutorial2\Resources\Windows\UnrealTutorial2.rc" />
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{E388ACA6-64AF-403D-861F-4F57DA20BE06}</ProjectGuid>
+		<Keyword>MakeFileProj</Keyword>
+		<RootNamespace>UnrealTutorial2</RootNamespace>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_RocketGame|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_RocketGame|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_RocketGame|Win32'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings" />
+	<PropertyGroup Label="UserMacros" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_RocketGame|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_RocketGame|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Build.bat" UnrealTutorial2 Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealTutorial2 Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Clean.bat" UnrealTutorial2 Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Win64\UnrealTutorial2-Win64-DebugGame.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Build.bat" UnrealTutorial2Editor Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealTutorial2Editor Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Clean.bat" UnrealTutorial2Editor Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>D:\Unreal4\Unreal Engine\4.1\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_RocketGame|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_RocketGame|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Build.bat" UnrealTutorial2 Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealTutorial2 Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Clean.bat" UnrealTutorial2 Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Win64\UnrealTutorial2.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Build.bat" UnrealTutorial2Editor Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealTutorial2Editor Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Clean.bat" UnrealTutorial2Editor Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>D:\Unreal4\Unreal Engine\4.1\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_RocketGame|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_RocketGame|Win32'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Build.bat" UnrealTutorial2 Win32 Shipping "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealTutorial2 Win32 Shipping "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Unreal4\Unreal Engine\4.1\Engine\Build\BatchFiles\Clean.bat" UnrealTutorial2 Win32 Shipping "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Win32\UnrealTutorial2-Win32-Shipping.exe</NMakeOutput>
+	</PropertyGroup>
+	<PropertyGroup>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);UE_GAME=1;IS_PROGRAM=0;UE_ROCKET=1;UNICODE;_UNICODE;__UNREAL__;IS_MONOLITHIC=1;WITH_ENGINE=1;WITH_UNREAL_DEVELOPER_TOOLS=1;WITH_COREUOBJECT=1;USE_STATS_WITHOUT_ENGINE=0;WITH_PLUGIN_SUPPORT=0;USE_LOGGING_IN_SHIPPING=0;UE_BUILD_MINIMAL=1;WITH_EDITOR=1;WITH_EDITORONLY_DATA=0;WITH_SERVER_CODE=1;UBT_COMPILED_PLATFORM=Win64;WIN32=1;_WIN32_WINNT=0x0600;WINVER=0x0600;PLATFORM_WINDOWS=1;NDEBUG=1;UE_BUILD_DEVELOPMENT=1;UE_ENGINE_DIRECTORY=../../../../../../Unreal4/Unreal Engine/4.1/Engine/;ORIGINAL_FILE_NAME="UnrealTutorial2.exe";UNREALTUTORIAL2_API=;UE_ENABLE_ICU=1;WITH_STEAMWORKS=0;WITH_DIRECTXMATH=0;CORE_API=;COREUOBJECT_API=;WITH_PHYSX=1;WITH_APEX=1;WITH_RECAST=1;WITH_SPEEDTREE=0;ENGINE_API=;SLATE_API=;INPUTCORE_API=;MESSAGING_API=;NETWORKING_API=;SOCKETS_PACKAGE=1;SOCKETS_API=;RENDERCORE_API=;RHI_API=;SHADERCORE_API=;ASSETREGISTRY_API=;ENGINEMESSAGES_API=;ENGINESETTINGS_API=;SYNTHBENCHMARK_API=;RENDERER_API=;UE_EDITOR=1;USE_NETWORK_PROFILER=1;WITH_SIMPLYGON=0;UNREALED_API=;BSPMODE_API=;DOCUMENTATION_API=;PROJECTS_API=;SANDBOXFILE_API=;EDITORSTYLE_API=;SOURCECONTROL_API=;UNREALEDMESSAGES_API=;XAUDIO2_API=;USERFEEDBACK_API=;COLLECTIONMANAGER_API=</NMakePreprocessorDefinitions>
+		<NMakeIncludeSearchPath>$(NMakeIncludeSearchPath);D:\Unreal4\Unreal Engine\4.1\Engine\Source;..\..\Source;..\Build\Win64\UnrealTutorial2\Inc\UnrealTutorial2;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Internationalization;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Async;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Concurrency;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Containers;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\GenericPlatform;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\HAL;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Math;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Misc;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Modules;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Modules\Boilerplate;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\ProfilingDebugging;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Serialization;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Serialization\Json;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Stats;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Templates;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\UObject;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Core\Public\Windows;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\CoreUObject;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Public\Blueprint;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Public\Misc;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Public\Serialization;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Public\Templates;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\CoreUObject\Public\UObject;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Engine\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Engine;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Engine\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Engine\Public\AI;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Engine\Public\Landscape;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Engine\Public\Net;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Engine\Public\Slate;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Slate;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\Docking;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\DockingFramework;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\MultiBox;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\TableView;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\Testing;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\Text;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Slate\Public\TutorialSystem;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\InputCore\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\InputCore;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\InputCore\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Messaging;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Messaging\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Messaging\Public\Common;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Messaging\Public\Interfaces;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Networking;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Networking\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Networking\Public\Common;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Networking\Public\Interfaces;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Networking\Public\Interfaces\IPv4;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Networking\Public\Interfaces\Steam;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Sockets;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Sockets\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\RenderCore;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\RenderCore\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\RHI;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\RHI\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\ShaderCore;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\ShaderCore\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\AssetRegistry;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\AssetRegistry\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\EngineMessages\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\EngineMessages;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\EngineMessages\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\EngineSettings\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\EngineSettings;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\EngineSettings\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\SynthBenchmark;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Developer\SynthBenchmark\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Renderer;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Renderer\Public;..\Build\Win64\Inc\UnrealTutorial2;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Programs\UnrealLightmass\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\UnrealEd;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\Commandlets;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\Dialogs;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\DragAndDrop;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\Features;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\Kismet2;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\Layers;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEd\Public\Toolkits;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\BspMode;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\BspMode\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Documentation;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\Documentation\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\Projects;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Projects\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Projects\Public\Interfaces;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\SandboxFile;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\SandboxFile\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\EditorStyle;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\EditorStyle\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\EditorStyle\Public\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\EditorStyle\Public\Interfaces;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\SourceControl;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Developer\SourceControl\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEdMessages\Classes;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\UnrealEdMessages;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UnrealEdMessages\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\XAudio2;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Runtime\Windows\XAudio2\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\UserFeedback;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Editor\UserFeedback\Public;D:\Unreal4\Unreal Engine\4.1\Engine\Intermediate\Build\Win64\Inc\CollectionManager;D:\Unreal4\Unreal Engine\4.1\Engine\Source\Developer\CollectionManager\Public;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\INCLUDE;C:\Program Files (x86)\Windows Kits\8.1\include\shared;C:\Program Files (x86)\Windows Kits\8.1\include\um;C:\Program Files (x86)\Windows Kits\8.1\include\winrt;;</NMakeIncludeSearchPath>
+		<NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>
